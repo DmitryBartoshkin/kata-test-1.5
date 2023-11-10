@@ -28,6 +28,18 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -35,3 +47,109 @@ body {
 *:after {
     box-sizing: inherit;
 }
+
+/* slider */
+.slider__title {
+    padding: 1rem 1.5rem;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 100%);
+    margin: 0;
+}
+
+.slider__toggle {
+    margin: 1.5rem;
+    margin-top: 0.75rem;
+}
+/* /slider */
+
+/* title-h1 */
+.title-h1 {
+    font-family: 'TT Lakes', 'Arail', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    letter-spacing: -0.0125rem;
+    color: #7E7E82;
+    text-transform: uppercase;
+}
+/* /title-h1 */
+
+/* brands */
+.brands {
+    padding: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* /brands */
+
+/* brand */
+.brand {
+    width: 240px;
+    height: 72px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    display: flex;
+    margin: 0.75rem;
+}
+
+.brand__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.brand__logo {
+    margin-left: 1rem;
+}
+
+.brand__arrow {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+}
+/* /brand */
+
+/* toggle */
+.toggle {
+    font-family: 'TT Lakes', 'Arail', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    letter-spacing: -0.0125rem;
+    color: #1B1C21;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    padding-left: 1.5rem;
+    cursor: pointer;
+}
+
+.toggle--show::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url('../img/arrows-blue.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.toggle--hide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url('../img/arrows-blue.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+}
+/* /toggle */
