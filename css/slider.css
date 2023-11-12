@@ -29,18 +29,11 @@ body {
     padding: 0;
     font-size: 16px;
     background-color: #f8f8f8;
-    width: 1120px;
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (min-width: 1120px) {
     body {
-        width: 768px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    body {
-        width: 320px;
+        width: 1120px;
     }
 }
 
@@ -178,7 +171,7 @@ li {
 
 @media screen and (max-width: 767px) {
     .brand {
-        width: 240px;
+        width: 240px!important;
     }
 
     .brands {

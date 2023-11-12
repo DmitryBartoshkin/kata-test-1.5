@@ -22,7 +22,6 @@ if (window.screen.width > 1119) {
     }
 } else {
     const swiper = new Swiper('.swiper', {
-        slidesPerView: 1.333,
         loop: true,
         pagination: {
             el: ".swiper-pagination",
